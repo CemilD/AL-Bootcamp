@@ -23,5 +23,11 @@ table 50100 BookTable
         }
     }
     
-    
+    keys
+    {
+        key(PK; ISBN)
+        {
+            Clustered = true;
+        }
+    }
 }
