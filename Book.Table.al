@@ -21,6 +21,12 @@ table 50100 BookTable
         {
             Caption = 'Edition';
         }
+        field(50;"Set from Employee No.";code[20])
+        {
+            Caption = 'Set from Employee';
+            TableRelation = Employee."No.";
+            ValidateTableRelation = true;
+        }
     }
     
     keys
