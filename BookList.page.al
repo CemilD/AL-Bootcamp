@@ -6,6 +6,7 @@ page 50100 BookList
     UsageCategory = Lists;
     SourceTable = BookTable;
     Editable = false;
+    CardPageId = BookCard;
     
     layout
     {
@@ -29,13 +30,11 @@ page 50100 BookList
                 {
                     ToolTip = 'Title from Book';
                 }
-                field("Set from Employee No.";Rec."Set from Employee No.")
-                {
-                    ToolTip = 'Employee who recomand this book';
-                }
+
             }
         }
 
     }
+
     
 }

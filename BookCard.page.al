@@ -1,9 +1,8 @@
 page 50101 BookCard
 {
-    PageType = Card;
+    PageType = Document;
     Caption = 'Book page';
     ApplicationArea = All;
-    UsageCategory = Administration;
     SourceTable = BookTable;
     
     layout
@@ -15,6 +14,7 @@ page 50101 BookCard
                 field(ISBN; Rec.ISBN)
                 {
                     ToolTip = 'ISBN from Book';
+
                 }
                 field(Edition;Rec.Edition)
                 {
@@ -28,29 +28,10 @@ page 50101 BookCard
                 {
                     ToolTip = 'Book author';
                 }
-                field("Set from Employee No.";Rec."Set from Employee No.")
-                {
-                    ToolTip = 'Employee who recomand this book';
-                }
+
             }
+
         }
     }
-    
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                
-                trigger OnAction()
-                begin
-                    
-                end;
-            }
-        }
-    }
-    
-    var
-        myInt: Integer;
+
 }

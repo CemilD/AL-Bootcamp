@@ -8,6 +8,7 @@ table 50100 BookTable
         field(10;ISBN; code[20])
         {
             Caption = 'ISBN';
+            DataClassification = CustomerContent;
         }
         field(20;Author; Text[50])
         {
@@ -21,14 +22,11 @@ table 50100 BookTable
         {
             Caption = 'Edition';
         }
-        field(50;"Set from Employee No.";code[20])
-        {
-            Caption = 'Set from Employee';
-            TableRelation = Employee."No.";
-            ValidateTableRelation = true;
-        }
+
     }
     
+
+
     keys
     {
         key(PK; ISBN)

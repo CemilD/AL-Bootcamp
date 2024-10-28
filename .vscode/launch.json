@@ -10,6 +10,7 @@
             "breakOnError": "All",
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
+            "schemaUpdateMode": "ForceSync",
             "enableSqlInformationDebugger": true
         }
     ]
